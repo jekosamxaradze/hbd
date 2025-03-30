@@ -15,10 +15,11 @@
             background-repeat: no-repeat;
             background-size: cover;  /* უზრუნველყოფს რომ ფოტო მთლიანად დაეფაროს */
             margin: 0;
+            background-position: center center;  /* ცენტრირებულია */
         }
 
         .card {
-            background-color: black;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% გამჭირვალე შავი ფონი */
             background-repeat: no-repeat;
             background-size: cover;  /* ფოტოს გაშლა */
             background-position: center;  /* ფოტოს ცენტრირება */
@@ -34,21 +35,26 @@
             from { opacity: 0; transform: scale(0.9); }
             to { opacity: 1; transform: scale(1); }
         }
+
         h1 {
             color: #ff6f61;
         }
+
         p {
             font-size: 18px;
             color: #d5cbcb;
         }
+
         .cake {
             font-size: 50px;
             animation: bounce 1s infinite alternate;
         }
+
         @keyframes bounce {
             from { transform: translateY(0); }
             to { transform: translateY(-10px); }
         }
+
         .btn {
             display: inline-block;
             margin-top: 15px;
@@ -59,8 +65,22 @@
             border-radius: 5px;
             transition: background 0.3s;
         }
+
         .btn:hover {
             background: #e85a50;
+        }
+
+        /* media query რომ მორგებული იყოს პატარა ეკრანებისთვის */
+        @media screen and (max-width: 768px) {
+            body {
+                background-size: cover;  /* ბოლომდე გაშლა */
+                background-attachment: fixed;  /* გახადე ფონური სურათი ფიქსირებული */
+            }
+
+            .card {
+                max-width: 80%;  /* უფრო ფართო და მორგებული */
+                padding: 15px;
+            }
         }
     </style>
 </head>
@@ -68,7 +88,7 @@
     <div class="card">
         <div class="cake">🎂</div>
         <h1>გილოცავ დაბადების დღეს, ფიქრო! 🎉</h1>
-        <p>გისურვებ ბედნიერებას, ჯანმრთელობას და ყველაფერ საუკეთესოს! 💖</p>
+        <p>გისურვებ ბედნიერებას, ჯანმრთელობას და ყველაფერ საუკეთესო! 💖</p>
         <a href="#" class="btn">სიყვარულით, შენი შვილი</a>
     </div>
 </body>
