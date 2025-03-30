@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>გილოცავ დაბადების დღეს!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url(images.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;  /* უზრუნველყოფს რომ ფოტო მთლიანად დაეფაროს */
+            margin: 0;
+        }
+
+        .card {
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;  /* ფოტოს გაშლა */
+            background-position: center;  /* ფოტოს ცენტრირება */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 400px;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        p {
+            font-size: 18px;
+            color: #d5cbcb;
+        }
+        .cake {
+            font-size: 50px;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ff6f61;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #e85a50;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="cake">🎂</div>
+        <h1>გილოცავ დაბადების დღეს, ფიქრო! 🎉</h1>
+        <p>გისურვებ ბედნიერებას, ჯანმრთელობას და ყველაფერ საუკეთესოს! 💖</p>
+        <a href="#" class="btn">სიყვარულით, შენი შვილი</a>
+    </div>
+</body>
+</html>
